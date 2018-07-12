@@ -7,10 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatNativeDateModule} from '@angular/material';
+import {MatButtonModule, MatFormFieldModule, MatInputModule, MatNativeDateModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
-import {MatTableModule} from '@angular/material/table';
 
 
 import { AppComponent } from './app.component';
@@ -36,8 +35,6 @@ import { HttpService } from './http.service';
     HttpClientModule,
     AngularFontAwesomeModule,
     MatButtonModule,
-    MatTableModule,
-    MatCheckboxModule,
     MatFormFieldModule,
     MatNativeDateModule,
     MatInputModule,
@@ -56,10 +53,8 @@ import { HttpService } from './http.service';
   ],
   exports : [
     MatButtonModule,
-    MatCheckboxModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule,
     MatNativeDateModule,
     MatDatepickerModule
   ],

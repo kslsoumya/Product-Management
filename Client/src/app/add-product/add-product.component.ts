@@ -23,10 +23,9 @@ export class AddProductComponent implements OnInit {
 
   ngOnInit() {
     this.code = Math.floor(Math.random() * 999) + 100;
-
+    this.username = this.route.snapshot.paramMap.get('username');
   }
   public generateProduct = () => {
-    this.username = this.route.snapshot.paramMap.get('username');
     const product = {
       username: this.username,
       title: this.productName,
@@ -34,7 +33,6 @@ export class AddProductComponent implements OnInit {
       stock: this.stock,
       expiry: this.expDate
     };
-    console.log(product);
     this.httpService.addProduct(product).subscribe(
       (data) => {
         console.log(data);

@@ -1,5 +1,5 @@
 <div class="container-fluid pt-5" name="isChanged" [(ngModel)]="isChanged" ngDefaultControl>
-  <h3 class="accountHeading pb-2">Your Products</h3>
+  <h3 class="accountHeading p-3">Your Products</h3>
   <div class="row">
     <div class=" table-responsive">
     <table class="table table-striped  p-2">
@@ -36,10 +36,10 @@
             <input type="date" [(ngModel)] = "expiry" class="d-none d-md-block" placeholder ="Expiry Date" size="8">
           </td>
           <td>
-            <i class="fas fa-edit icon" (click)="editProduct(prod)" *ngIf="!prod.edit"></i>
-            <i class="fas fa-check icon" *ngIf="prod.edit" (click)="saveProduct(prod)"></i>&nbsp;&nbsp;
-            <i class="fas fa-trash icon" (click)="deleteProduct(prod)" *ngIf="!prod.edit"></i>
-            <i class="fas fa-times-circle icon" *ngIf="prod.edit" (click) ="cancelEdit(prod)"></i>          
+            <i class="fa fa-edit fa-lg icon" (click)="editProduct(prod)" *ngIf="!prod.edit"></i>
+            <i class="fa fa-check  fa-lg icon" *ngIf="prod.edit" (click)="saveProduct(prod)"></i>&nbsp;&nbsp;
+            <i class="fa fa-trash  fa-lg icon" (click)="deleteProduct(prod)" *ngIf="!prod.edit"></i>
+            <i class="fa fa-times-circle fa-lg  icon" *ngIf="prod.edit" (click) ="cancelEdit(prod)"></i>          
           </td>
         </tr>
       </tbody>

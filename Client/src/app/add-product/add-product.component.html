@@ -1,5 +1,5 @@
 <div class="container" style="text-align: center">
-  <h3 class="heading">Add a Product</h3>
+  <h3 class="heading p-3">Add a Product</h3>
   <div class="row">
     <div class=" col-8 col-md-7 mx-auto">
       <form class="addForm" #createProduct="ngForm" (ngSubmit)="generateProduct()">
@@ -18,7 +18,10 @@
         <mat-form-field class="form-field">
           <input matInput placeholder="Code" name="code" [(ngModel)]="code" required readonly>
         </mat-form-field>
-          <button  class="btn btn-outline-primary" type="submit" [disabled]='!createProduct.form.valid'>Add</button>
+          
+        <button  class="btn btn-outline-primary" type="submit" [disabled]='!createProduct.form.valid'>Add</button>
+        &nbsp; &nbsp;
+        <button  class="btn btn-outline-danger" routerLink ="/view/{{username">Cancel</button>
       </form>
     </div>
   </div>
